@@ -1,14 +1,11 @@
 package lt.code.academy.taskThree;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MapAs <K, V>{
 
-    List<Pair> pairs;
-
-    public MapAs(List<Pair> pairs) {
-        this.pairs = pairs;
-    }
+    List<Pair> pairs = new ArrayList<>();
 
     void put(K k, V v){
         Pair pair = new Pair<>(k, v);
